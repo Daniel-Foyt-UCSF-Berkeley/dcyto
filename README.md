@@ -1,9 +1,9 @@
 # dcyto
 
 
-dcyto is a tool to segment and analyse images of cells to produce flow like data. 
+dcyto is a tool to segment and analyse images of cells to produce flow cytometry like data. 
 
-dcyto was writen by Daniel Foyt. To learn more about the modivation for this tool, read the paper [here](https://huanglab.ucsf.edu/publications).
+dcyto was writen by Daniel Foyt. To learn more about the modivation for this tool, look out for our preprint [here](https://huanglab.ucsf.edu/publications).
 
 
 # Installation
