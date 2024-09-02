@@ -31,21 +31,21 @@ To install the gpu enabled version of Cellpose which grately increases the speed
 to run dcyto on a directory of tif images:
 
 '''python
-    import dcyto
-    
-    images_directory = 'path/to/tif/images/directory'
-	segmentation_out_directory = 'path/to/save/directory'
+import dcyto
+
+images_directory = 'path/to/tif/images/directory'
+segmentation_out_directory = 'path/to/save/directory'
 	
-	# run segmentation with Cellpose and save to segmentation_out_directory
-	image_paths, CP_out_paths = dcyto.segment_with_cellpose(images = images_directory,
-                                                  save_folder = segmentation_out_directory,
-                                                  chan = 0) # channel to segment
+# run segmentation with Cellpose and save to segmentation_out_directory
+image_paths, CP_out_paths = dcyto.segment_with_cellpose(images = images_directory,
+                                                        save_folder = segmentation_out_directory,
+                                                        chan = 0) # channel to segment
     
-    # use segmentation to extract the intensities in each channel in the images and save to a csv and fcs file
-    results_DataFrame = dcyto.extract_intensities(image_paths = image_paths,
-                                                  segment_paths = CP_out_paths,
-							                      save_path_name = results.csv,
-							                      fcs = True
-				                                  chan_names = ['WF','BFB','GFP','mApple'])
+# use segmentation to extract the intensities in each channel in the images and save to a csv and fcs file
+results_DataFrame = dcyto.extract_intensities(image_paths = image_paths,
+                                              segment_paths = CP_out_paths,
+					      save_path_name = results.csv,
+					      fcs = True
+				              chan_names = ['WF','BFB','GFP','mApple'])
 
 '''
