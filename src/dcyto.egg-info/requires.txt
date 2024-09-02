@@ -1,0 +1,8 @@
+numpy>=1.21
+scikit-image>=0.19.3
+cellpose==2.0
+torch
+matplotlib
+pathlib
+pandas
+fcswrite
