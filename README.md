@@ -30,7 +30,7 @@ To install the gpu enabled version of Cellpose which grately increases the speed
 # Example
 to run dcyto on a directory of tif images:
 
-'''python
+```python
 import dcyto
 
 images_directory = 'path/to/tif/images/directory'
@@ -48,4 +48,4 @@ results_DataFrame = dcyto.extract_intensities(image_paths = image_paths,
 					      fcs = True
 				              chan_names = ['WF','BFB','GFP','mApple'])
 
-'''
+```
