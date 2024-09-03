@@ -49,7 +49,7 @@ results_DataFrame = dcyto.extract_intensities(image_paths = image_paths,
                                               segment_paths = CP_out_paths,
 					      save_path_name = results.csv,
 					      fcs = True
-				              chan_names = ['WF','BFB','GFP','mApple'])
+				              chan_names = ['WF','BFP','GFP','mApple'])
 
 ```
 
