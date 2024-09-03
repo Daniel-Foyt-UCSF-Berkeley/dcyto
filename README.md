@@ -41,7 +41,7 @@ image_paths, CP_out_paths = dcyto.segment_with_cellpose(images = images_director
                                                         save_folder = segmentation_out_directory,
                                                         chan = 0) # channel to segment
 ```
-![alt text](https://github.com/Daniel-Foyt-UCSF-Berkeley/dcyto/image1.png?raw=true)
+![alt text](https://github.com/Daniel-Foyt-UCSF-Berkeley/dcyto/blob/main/image1.PNG?raw=true)
 
 ```python 
 # use segmentation to extract the intensities in each channel in the images and save to a csv and fcs file
@@ -52,3 +52,5 @@ results_DataFrame = dcyto.extract_intensities(image_paths = image_paths,
 				              chan_names = ['WF','BFB','GFP','mApple'])
 
 ```
+
+![alt text](https://github.com/Daniel-Foyt-UCSF-Berkeley/dcyto/blob/main/image2.PNG?raw=true)
