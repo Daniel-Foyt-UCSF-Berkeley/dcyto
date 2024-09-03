@@ -41,7 +41,7 @@ image_paths, CP_out_paths = dcyto.segment_with_cellpose(images = images_director
                                                         save_folder = segmentation_out_directory,
                                                         chan = 0) # channel to segment
 ```
-![](image1.png raw=true)
+![alt text](https://github.com/Daniel-Foyt-UCSF-Berkeley/dcyto/image1.png?raw=true)
 
 ```python 
 # use segmentation to extract the intensities in each channel in the images and save to a csv and fcs file
