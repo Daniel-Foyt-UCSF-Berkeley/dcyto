@@ -44,11 +44,23 @@ image_paths, CP_out_paths = dcyto.segment_with_cellpose(images = images_director
 ![alt text](https://github.com/Daniel-Foyt-UCSF-Berkeley/dcyto/blob/main/image1.PNG?raw=true)
 
 ```python 
+
+# add segmentation to tif files
+outline_save = 'path/to/save/appended/tifs/directory'
+dcyto.add_channel_to_images(image_paths,
+			    CP_out_paths,
+                            outline_save,
+                            chan_colores = ['grays','blue','green','red','yellow'],
+                            segmentation = True,
+                            outline = True,
+                            line_thick = 4)
+
+
 # use segmentation to extract the intensities in each channel in the images and save to a csv and fcs file
 results_DataFrame = dcyto.extract_intensities(image_paths = image_paths,
                                               segment_paths = CP_out_paths,
 					      save_path_name = results.csv,
-					      fcs = True
+					      fcs = True, #FCS3.0 
 				              chan_names = ['WF','BFP','GFP','mApple'])
 
 ```
