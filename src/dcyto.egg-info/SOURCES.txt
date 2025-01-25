@@ -11,4 +11,5 @@ src/dcyto.egg-info/SOURCES.txt
 src/dcyto.egg-info/dependency_links.txt
 src/dcyto.egg-info/requires.txt
 src/dcyto.egg-info/top_level.txt
+src/dcyto/data/__init__.py
 src/dcyto/test/__init__.py

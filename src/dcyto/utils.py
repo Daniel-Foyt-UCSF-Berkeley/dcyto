@@ -9,7 +9,7 @@ import pathlib
 import pandas as pd
 import struct
 import fcswrite
-
+import importlib
 
 def plot_image(image,title = '',size = 20,cmap='gray',cmapp_bar = True):
     '''
@@ -796,3 +796,4 @@ def DataFrame_to_fcs(DF, save_path_name, verbose = True):
                                             compat_max_int16=10000)
                 if verbose == True:
                     print('fcs file at '+fcs_path)
+
