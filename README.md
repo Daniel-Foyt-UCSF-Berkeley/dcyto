@@ -8,7 +8,7 @@ dcyto was writen by Daniel Foyt. To learn more about the modivation for this too
 
 # Installation
 
-You can install dcyto with native python if you have python3.7+.
+You can install dcyto with native python if you have python3.7+
 
 **Dependencies**, installed automaticaly when installed with conda/pip
 
